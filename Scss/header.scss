@@ -1,0 +1,103 @@
+@import "scss-12";
+body {
+	background-color:#111111;
+}
+
+.headers{
+
+	&_content{
+		display: flex;
+		max-width: 1160px;
+		background-color:#111111;
+		padding:0px 0px 44px 0px;
+		justify-content: center;
+		z-index: 1;
+		border-bottom: 1px #fff solid;
+	}
+	&_logo{
+		&_logos{}
+	}
+}
+
+
+.menu{ 
+	z-index: 5;
+	    display: flex;
+		text-align: center;
+		padding: 35px 222px 0px 222px;
+		&_item{
+			padding: 0px 54px 0px 0px;
+		}
+		&_text{
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 19 / 14 * 100%;
+			color:#fff;
+			transition: color 0.3s ease 0s;
+			&:hover{
+			color: red;
+		}
+		}
+		
+	}
+
+.language{
+
+	padding: 35px 0px 0px 0px;
+	&_menu{
+		display: block; 
+		text-align: center;
+		margin: 15px 0px 0px 0px;
+	}
+	&_mani{
+		margin: 0px 0px 0px 40px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19 / 14 * 100%;
+		color: #fff;
+	} 
+
+	&_multi{
+	border-top: 15px;
+	display: none;
+	opacity: 0;
+	position: absolute;
+    width: 100px;
+    height: 70px;
+    z-index: 100000;
+    background-color: #fff;
+    text-align: center; 
+    border-radius: 0;
+    -webkit-font-smoothing: antialiased;
+    transition: opacity 0.3s ease 0s;
+    -webkit-transition: opacity 0.2s cubic-bezier(.895,.03,.685,.22);
+    }
+	&_menu:hover &_multi{
+		display: block;
+		opacity: 1;
+    }
+	&_EN{
+		padding: 10px 0px 0px 0px;
+	}
+	&_English{
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19 / 14 * 100%;
+		color: #000;
+		&:hover{
+			color: red;
+		}
+	}
+	&_DE{
+		margin: 10px 0px 0px 0px;
+	}
+	&_German{
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19 / 14 * 100%;
+		color: #000;
+		&:hover{
+			color: red;
+		}
+	}
+}	
